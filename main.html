@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kablammo:MORF@0..60&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <style>
+      body {
+        background: #1a2e05;
+        color: #87efac;
+        padding: 0;
+        margin: 0;
+      }
+
+      header {
+        background: #1a2e05;
+        display: flex;
+        align-items: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        justify-content: space-between;
+        gap: 8px;
+        font-size: 1.875rem; /* 30px */
+        line-height: 2.25rem; /* 36px */
+      }
+
+      nav {
+        font-size: 1.25rem; /* 20px */
+        line-height: 1.75rem; /* 28px */
+        display: flex;
+        gap: 16px;
+      }
+
+      main {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        border-radius: 0.25rem;
+        backdrop-filter: blur(4px);
+        color: #1a2e05;
+      }
+
+      a {
+        color: #87efac;
+        text-decoration: none;
+      }
+
+      h1 {
+        font-size: 6rem;
+        line-height: 1;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+      }
+
+      h3 {
+        font-size: 2rem;
+        line-height: 1;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+      }
+
+      img {
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        z-index: -10;
+        object-fit: cover;
+      }
+
+      .kablammo-s {
+        font-family: "Kablammo", system-ui;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-variation-settings: "MORF" 0;
+      }
+
+      .kablammo-s:hover {
+        animation: morphAnimation 2s infinite alternate linear;
+      }
+
+      .kablammo-f {
+        font-family: "Kablammo", system-ui;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-variation-settings: "MORF" 0;
+        animation: morphAnimation 8s infinite alternate linear;
+      }
+
+      .poppins-regular {
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+      }
+
+      @keyframes morphAnimation {
+        0% {
+          font-variation-settings: "MORF" 0;
+        }
+        100% {
+          font-variation-settings: "MORF" 60;
+        }
+      }
+
+      .welcomer {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+      }
+    </style>
+
+    <img src="./pic.jpg" />
+
+    <header>
+      <a href="/main.html" class="text-3xl kablammo-s">Michael Mehall</a>
+      <nav>
+        <a href="./mtb.html" class="kablammo-s">Cycling</a>
+        <a href="./contact.html" class="kablammo-s">Contact</a>
+      </nav>
+    </header>
+
+    <main class="poppins-regular">
+      <div class="welcomer">
+        <h1 class="kablammo-f">Welcome!</h1>
+        <svg
+          xmlns:svg="http://www.w3.org/2000/svg"
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.0"
+          viewBox="0 0 220 400"
+          style="height: 8rem; width: 8rem"
+        >
+          <defs />
+          <path
+            fill="#1a2e05"
+            d="M 149,102 C 136.33072,207.3464 184.91388,238.97814 165,250 C 148.99349,258.85922 130.18553,238.04638 132,108"
+          />
+          <path
+            fill="#1a2e05"
+            d="M 108,106 C 99.675178,115.73931 91.87359,119.29605 83.843039,124.06686 C -16.593017,183.73417 29.203938,305.46206 108,321 C 86.588999,344.02967 54.161582,384 90,384 C 104.42866,384 107.77358,381.46245 112.00422,376.49364 C 115.62464,372.24152 126.96273,360 93,360 C 110.17083,341.00046 155.06756,309.74825 107,297 C 118.45398,284.06952 138.04416,288.31545 155,287 C 152.65677,314.88985 116.44238,347 155,347 C 173.32108,347 178.13324,336.74361 176.79451,329.59375 C 174.27337,316.12885 167.48826,326.375 155.5,325.5 C 171.59134,287.40223 195.89064,263 156,263 C 90.248099,263 54.16023,215.09556 72,185 C 83.625954,165.3871 92.346319,206.80772 144,195 L 141,173 C 100.08977,185.41023 89.142258,155.60774 92.25,150.75 C 93.578607,148.67324 102.95451,151.5885 105.57458,153.3018 C 107.43922,154.52112 111.4375,158.5625 113,159.25 C 115.02743,160.14207 120.91392,159.40515 124.14557,160.5128 C 126.69961,161.3882 130.53609,167.57774 136,169.25 L 137,138.5 C 131.15625,140.5625 129.21877,144.82813 127.05469,144.82813 C 124.67537,144.82813 123.28985,142.13086 120.33301,142.13086 C 117.00492,142.13086 113.8125,137.75 113.75,134.75 C 113.5,122.75 137,129.75 140.75,128.5 C 144.5,127.25 160.5,112 159.5,99.5 C 158.5,87 154.75,86.5 154.75,83.25 C 154.75,80 158.75,82 158.75,72.5 C 158.75,63 155.5,64.5 155.5,64.5 C 160.44223,29.731076 96.969766,7.992591 88.5,31.5 C 85.061066,41.044588 136.95157,31.507837 140.5,69.25 C 110.08829,32.75 79,45.238386 79,53.5 C 79,67.801971 100.60031,47.199063 123.25,73.75 C 90.940278,55.837037 67.25,68.432378 67.25,76.75 C 67.25,85.759882 89,73.814712 98,83.75 C 78.369175,83.311529 61.25,96.901449 61.25,103.75 C 61.25,118.89842 96.514853,90.51114 108,106 z "
+          />
+        </svg>
+      </div>
+      <p>
+        Hello! I'm Michael Mehall, a second year Data Science and Economics
+        student studying at Northeastern University. In the world of computer
+        science, I love building developer tooling and infrastructure, creating
+        the foundation for successful software. Currently I am involved in the
+        software consultancy group Sandbox on campus developing and maintaining
+        the SearchNEU project, which is used and loved by over twenty five
+        thousand students across all of Northeastern's campuses. In addition, I
+        founded Altitude Web Design which delivers high quality custom software
+        solutions and consulting to companies of all size. Outside of academics,
+        I'm an avid mountain biker, skier, climber, and general enjoyer of the
+        outdoors (this picture from Northeastern's home mtb race in western
+        Massachusetts).
+      </p>
+      <p>
+        Some of my latest projects include building a document database with a
+        Google Doc as a storage layer, recreating a relational database from
+        scratch, as well as building a Docker deployment tool to help ease the
+        burden of self hosting applications. The majority of these projects are
+        built in the Go programming language as it is both extremely versatile
+        but also simple, helping keep abstraction costs down and forcing the
+        developer to be explicit when programming, avoiding technical debt often
+        incurred through "clever" programming.
+      </p>
+    </main>
+  </body>
+</html>

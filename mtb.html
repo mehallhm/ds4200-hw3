@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kablammo:MORF@0..60&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <style>
+      body {
+        background: #1a2e05;
+        color: #87efac;
+        padding: 0;
+        margin: 0;
+      }
+
+      header {
+        background: #1a2e05;
+        display: flex;
+        align-items: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        justify-content: space-between;
+        gap: 8px;
+        font-size: 1.875rem; /* 30px */
+        line-height: 2.25rem; /* 36px */
+      }
+
+      nav {
+        font-size: 1.25rem; /* 20px */
+        line-height: 1.75rem; /* 28px */
+        display: flex;
+        gap: 16px;
+      }
+
+      main {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+
+      a {
+        color: #87efac;
+        text-decoration: none;
+      }
+
+      h1 {
+        font-size: 6rem;
+        line-height: 1;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+      }
+
+      h3 {
+        font-size: 2rem;
+        line-height: 1;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+
+      .kablammo-s {
+        font-family: "Kablammo", system-ui;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-variation-settings: "MORF" 0;
+      }
+
+      .kablammo-s:hover {
+        animation: morphAnimation 2s infinite alternate linear;
+      }
+
+      .kablammo-f {
+        font-family: "Kablammo", system-ui;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-variation-settings: "MORF" 0;
+        animation: morphAnimation 8s infinite alternate linear;
+      }
+      .poppins-regular {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      @keyframes morphAnimation {
+        0% {
+          font-variation-settings: "MORF" 0;
+        }
+        100% {
+          font-variation-settings: "MORF" 60;
+        }
+      }
+    </style>
+    <header>
+      <a href="/main.html" class="text-3xl kablammo-s">Michael Mehall</a>
+      <nav>
+        <a href="./mtb.html" class="kablammo-s">Cycling</a>
+        <a href="./contact.html" class="kablammo-s">Contact</a>
+      </nav>
+    </header>
+    <main class="poppins-regular">
+      <h1 class="kablammo-f">Cycling</h1>
+
+      <p>
+        I like bikes. I guess that should be apparent from what I said on the
+        home page about me being an avid mountain biker among the other
+        things... but being outside is truly a unique experience. I have raced
+        mountain bikes for the last 4 years, joining my high school team (yes,
+        our high school had a mountain biking team, it was awesome) and having
+        two pretty great seasons. I then came to college and joined
+        Northeastern's team where I have now raced for one season (took a year
+        off the bike my Freshman year). Part of the team is pictured below at
+        our home race!
+      </p>
+      <p>
+        The latest of my escapades outside have actually been climbing. A friend
+        dragged me out to a gym one day and it respired my love for the sport,
+        and thus I spent the last summer outside enjoying the walls. I am
+        blessed enough to have a father who was thrilled to get back into a
+        sport he did in his youth who taught me a ton (literally life saving
+        amount) of the important stuff. Climbing outside, especially
+        "traditional" climbing where you place your own protection, has a lot of
+        skill and technique involved in it that can be tricky to learn when a
+        mistake costs your life.
+      </p>
+      <h3 class="kablammo-f">Rank</h3>
+      <p>If I had to rank my favorite outdoor things, it would be:</p>
+      <ol>
+        <li>Backcountry Skiing</li>
+        <li>Mountain Biking</li>
+        <li>Climbing</li>
+        <li>Backpacking</li>
+        <li>Hiking</li>
+      </ol>
+
+      <img src="./team.jpg" />
+    </main>
+  </body>
+</html>
